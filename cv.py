@@ -6,6 +6,7 @@ if nomber_img==1:
     cv2.resize(image, (300, 200), interpolation=cv2.INTER_AREA)
     while True:
         cv2.imshow("Image 1", image)
+        cv2.setWindowProperty("Image 1", cv2.WND_PROP_TOPMOST, 1)
         if cv2.waitKey(25) == 27:
             break
 elif nomber_img==2:
@@ -14,7 +15,7 @@ elif nomber_img==2:
     cv2.setWindowProperty("Image 2", cv2.WND_PROP_ASPECT_RATIO, 1.0)
     while True:
         cv2.imshow("Image 2", image)
-        if cv2.waitKey(25) == 27:# Закрытие окна происходит при нажатии на esc
+        if cv2.waitKey(25) == 27:
             break
 else:
     image = cv2.imread("C:/Users/User/Pictures/2.jpg", 0x221111)
