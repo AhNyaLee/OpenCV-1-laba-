@@ -1,5 +1,4 @@
 import cv2
-import numpy as np
 n=int(input("1 или 2"))
 cap=cv2.VideoCapture(r'video5444892193334510796.mp4',cv2.CAP_ANY)
 if n==1 :
