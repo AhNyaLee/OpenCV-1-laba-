@@ -3,9 +3,8 @@ nomber_img=int(input("Выберите номер картинки от 1 до 3
 if nomber_img==1:
     image = cv2.imread("e6044cb0b978ce39ff76b57402ebd1de.jpeg", cv2.IMREAD_GRAYSCALE)
     cv2.namedWindow("Image 1", cv2.WINDOW_NORMAL)
-    cv2.resize(image, (300, 200), interpolation=cv2.INTER_AREA)
     while True:
-        cv2.imshow("Image 1", image)
+        cv2.imshow("Image 1", cv2.resize(image, (300, 200), interpolation=cv2.INTER_AREA))
         cv2.setWindowProperty("Image 1", cv2.WND_PROP_TOPMOST, 1)
         if cv2.waitKey(25) == 27:
             break

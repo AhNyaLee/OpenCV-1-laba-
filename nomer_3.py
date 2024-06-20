@@ -1,5 +1,5 @@
 import cv2
-def ReadIPWriterTofilr():
+def ReadIPWriterTofile():
     camera = cv2.VideoCapture(0)
     w = int(camera.get(cv2.CAP_PROP_FRAME_WIDTH))
     h = int(camera.get(cv2.CAP_PROP_FRAME_HEIGHT))
@@ -14,4 +14,4 @@ def ReadIPWriterTofilr():
     camera.release()
     cv2.destroyAllWindows()
 
-ReadIPWriterTofilr()
+ReadIPWriterTofile()
