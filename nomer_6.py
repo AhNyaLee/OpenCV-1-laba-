@@ -1,5 +1,5 @@
 import cv2
-def cross():
+def cross(img):
    # Получаем размеры изображения
    width = img.shape[1]
    height = img.shape[0]
@@ -22,7 +22,7 @@ cap=cv2.VideoCapture(0)
 #ok, img = cap.read()#Если нужен один кадр
 while (True):
    ok, img = cap.read()# если нам нужно  видео
-   cross()
+   cross(img)
    cv2.imshow('img', img)
    if cv2.waitKey(1) & 0xFF == 27:
         break
