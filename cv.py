@@ -1,7 +1,7 @@
 import cv2
 nomber_img=int(input("Выберите номер картинки от 1 до 3"))
 if nomber_img==1:
-    image = cv2.imread("e6044cb0b978ce39ff76b57402ebd1de.jpeg", cv2.IMREAD_GRAYSCALE)
+    image = cv2.imread("e.svg", cv2.IMREAD_GRAYSCALE)
     cv2.namedWindow("Image 1", cv2.WINDOW_NORMAL)
     while True:
         cv2.imshow("Image 1", cv2.resize(image, (300, 200), interpolation=cv2.INTER_AREA))
