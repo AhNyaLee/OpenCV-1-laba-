@@ -26,4 +26,4 @@ while (True):
    cv2.imshow('img', img)
    if cv2.waitKey(1) & 0xFF == 27:
         break
-#cv2.rectangle(img, pt1, pt2, color[, thickness[,lineType[,shift]]])  рисуем крест
+#cv2.rectangle(img, pt1, pt2, color,border(если хотим полностью закрасить ставим значение -1)любое значение 0<)  рисуем крест
