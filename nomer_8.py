@@ -1,7 +1,4 @@
 import cv2
-import numpy as np
-
-
 def cross(img):
     # Получаем размеры изображения
     width = img.shape[1]
